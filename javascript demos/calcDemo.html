@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function add(){
+	var num1 = document.getElementById("field1").value;
+	var num2 = document.getElementById("field2").value;
+
+	document.getElementById("answer").value = parseInt(num1)+parseInt(num2);
+	}
+	
+	function subtract(){
+		var num1 = document.getElementById("field1").value;
+		var num2 = document.getElementById("field2").value;
+
+		document.getElementById("answer").value = parseInt(num1)-parseInt(num2);
+	}
+	
+	function multiply(){
+		var num1 = document.getElementById("field1").value;
+		var num2 = document.getElementById("field2").value;
+
+		document.getElementById("answer").value = parseInt(num1)*parseInt(num2);
+	}
+</script>
+</head>
+<body align="center">
+	Field1: <input type="text" id="field1"><br>
+	Field2: <input type="text" id="field2">
+	
+	<br><br>
+	
+	<button type="button" onclick="javascript: add();">Add</button>
+	<button type="button" onclick="javascript: subtract();">Subtract</button>
+	<button type="button" onclick="javascript: multiply();">Multiply</button>
+	<button type="button" onclick="javascript: divide();">Divide</button>
+	<br><br>
+	Answer: <input id="answer" type="text">
+</body>
+</html>
